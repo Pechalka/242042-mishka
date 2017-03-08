@@ -7,7 +7,8 @@
     "@htmlacademy/editorconfig-cli": "0.1.x"
   },
   "scripts": {
-    "test": "editorconfig-cli"
+    "test": "editorconfig-cli",
+    "start": "browser-sync start --server --files 'css/*.css, *.html'"
   },
   "editorconfig-cli": [
     "*.html",
