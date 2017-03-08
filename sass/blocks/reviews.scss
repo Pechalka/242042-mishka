@@ -1,0 +1,68 @@
+@import "../mixins";
+
+.reviews {
+  padding: 30px;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.reviews__nick {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__btn {
+  display: block;
+  width: 100%;
+}
+
+.reviews__nav {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #ececec;
+  display: flex;
+}
+
+.reviews__btn-prev,
+.reviews__btn-next {
+  width: 50%;
+  text-align: center;
+  @include textHidden;
+  height: 50px;
+}
+
+.reviews__btn-prev {
+  background: url(../img/icon-left-arrow.svg) no-repeat center center;
+}
+
+.reviews__btn-next {
+  border-left: 1px solid #ececec;
+  background: url(../img/icon-right-arrow.svg) no-repeat center center;
+}
+
