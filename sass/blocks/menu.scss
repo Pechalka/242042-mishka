@@ -1,9 +1,4 @@
-
-@mixin textHidden() {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
+@import "../mixins";
 
 
 .menu {
@@ -22,6 +17,11 @@
     right: 0;
     top: 0;
   }
+}
+
+
+.menu--open::after {
+  display: block;
 }
 
 .menu__logo {
