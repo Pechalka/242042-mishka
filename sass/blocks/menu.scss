@@ -1,0 +1,111 @@
+@import "../mixins";
+
+
+.menu {
+  min-height: 80px - 1px - 1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
+  z-index: 2;
+
+  &--open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+
+.menu--open::after {
+  display: block;
+}
+
+.menu__logo {
+  text-align: center;
+  display: block;
+}
+
+.menu__toggle {
+  @include textHidden;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+
+  &::after {
+    content: '';
+    background: url(../img/icon-menu-open.svg) no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--open::after {
+    background: url(../img/icon-menu-close.svg) no-repeat center center;
+  }
+}
+
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+
+  &--open {
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+  }
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  border-bottom: 1px solid #ececec;
+  padding: 25px;
+  padding-left: 75px;
+  padding-right: 60px;
+  color: #000000;
+  position: relative;
+}
+
+.menu__link--search::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-search.svg) no-repeat;
+  left: 40px;
+  top: calc(50% - 10px);
+}
+
+.menu__link--cart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-cart.svg) no-repeat;
+  left: 40px;
+  top: calc(50% - 10px);
+}

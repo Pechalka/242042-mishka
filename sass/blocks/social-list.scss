@@ -1,0 +1,49 @@
+@import "../mixins";
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.social-list li {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.social-list li:nth-child(3) {
+  margin-right: 0;
+}
+
+
+.social-list__link {
+  @include textHidden;
+  display: inline-block;
+}
+
+.social-list__link--instagram {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-insta.svg) no-repeat center center;
+}
+
+.social-list__link--facebook {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-fb.svg) no-repeat center center;
+}
+
+.social-list__link--twiter {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-twitter.svg) no-repeat center center;
+}

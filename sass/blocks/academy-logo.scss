@@ -1,0 +1,9 @@
+@import "../mixins";
+
+.academy-logo {
+  @include textHidden;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background: url(../img/logo-htmlacademy.svg) no-repeat center center;
+}

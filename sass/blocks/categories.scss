@@ -1,0 +1,49 @@
+
+.categories {
+  background-color: #63d1bb;
+}
+
+.categories__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories__item {
+  padding: 25px 20px;
+  display: block;
+  position: relative;
+}
+
+.categories__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  display: block;
+  width: 120px;
+}
+
+.categories__item--toys {
+  background-color: #56c3b2;
+}
+
+.categories__item--interior-decorations::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url(../img/icon-interior.svg) no-repeat center center;
+  right: 25px;
+  top: 20px;
+}
+
+.categories__item--toys::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url(../img/icon-toy.svg) no-repeat center center;
+  right: 25px;
+  top: 20px;
+}

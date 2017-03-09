@@ -1,0 +1,47 @@
+
+.about {
+  padding: 30px;
+}
+
+.about__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.about__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.about__item--natural::before {
+  background: url(../img/icon-feature-1.svg) no-repeat;
+}
+
+.about__item--profit {
+  background: url(../img/icon-feature-2.svg) no-repeat;
+}
+
+.about__item--more-likes {
+  background: url(../img/icon-feature-3.svg) no-repeat;
+}
+
+.about__item--hand-make {
+  background: url(../img/icon-feature-4.svg) no-repeat;
+}
+
+.about__item--mother-russia {
+  background: url(../img/icon-feature-5.svg) no-repeat;
+}
+
+.about__item--nice-box {
+  background: url(../img/icon-feature-6.svg) no-repeat;
+}
