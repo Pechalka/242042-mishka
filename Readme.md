@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Andrey Luzhkovsky](https://up.htmlacademy.ru/adaptive/10/user/242042).
-* Наставник: `Сергей Рубец`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/id41580).
 
 ---
 
