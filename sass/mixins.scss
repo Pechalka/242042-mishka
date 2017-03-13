@@ -4,3 +4,46 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+
+$screen-xs-min:                          480px;
+$screen-sm-min:                          768px;
+$screen-md-min:                          1024px;
+$screen-lg-min:                          1224px;
+
+@mixin from($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin to($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @include to($screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @include from($screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include from($screen-md-min) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include from($screen-lg-min) {
+    @content;
+  }
+}
+

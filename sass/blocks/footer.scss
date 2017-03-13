@@ -1,3 +1,4 @@
+@import "../mixins";
 
 .footer {
   background-color: #f1f1f1;
@@ -22,4 +23,34 @@
 
 .footer__copyright-text {
   margin-right: 30px;
+}
+
+.footer__logo {
+  display: none;
+}
+
+@include sm {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  .footer__logo {
+    display: block;
+    width: 190px;
+  }
+
+  .footer__social {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .footer__copyright {
+    padding-top: 0;
+  }
 }
