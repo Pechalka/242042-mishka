@@ -1,9 +1,11 @@
+@import "../mixins";
 
 .promo {
   min-height: 280px;
-  background: url(../img/hero-mobile@1x.jpg) no-repeat center center;
+  background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat center bottom;
   padding-left: 25px;
   padding-right: 25px;
+  background-size:contain;
 }
 
 .promo__text {
@@ -12,4 +14,15 @@
   text-align: center;
   padding-top: 70px;
   margin: 0;
+}
+
+@include sm {
+  .promo {
+    min-height: 580px;
+  }
+
+  .promo__text {
+    padding-top: 110px;
+  }
+
 }
