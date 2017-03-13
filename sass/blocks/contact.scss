@@ -1,3 +1,4 @@
+@import "../mixins";
 
 .contact {
   padding: 30px;
@@ -43,4 +44,39 @@
 
 .contact__btn {
   width: 100%;
+}
+
+@include sm {
+  .contact__btn {
+    width: auto;
+  }
+
+  .contact__title {
+    font-size: 43px;
+    line-height: 55px;
+    position: relative;
+  }
+
+  .contact__title::after {
+    content: '';
+    position: absolute;
+    background: url(../img/icon-flag.svg) no-repeat;
+    width: 50px;
+    height: 90px;
+    right: 0;
+    top: -10px;
+  }
+}
+
+@include md {
+
+  .contact {
+    padding-left: 225px;
+    width: 50%;
+  }
+
+  .contact__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
