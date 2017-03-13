@@ -1,3 +1,4 @@
+@import "../mixins";
 
 .about {
   padding: 30px;
@@ -44,4 +45,28 @@
 
 .about__item--nice-box {
   background: url(../img/icon-feature-6.svg) no-repeat;
+}
+
+@include sm {
+  .about {
+    padding: 50px;
+    padding-top: 60px;
+  }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+}
+
+@include md {
+  .about {
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+  }
 }
