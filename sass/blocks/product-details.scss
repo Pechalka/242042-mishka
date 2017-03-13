@@ -32,6 +32,7 @@
 
 .product-details__img-container {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .product-details__price {
@@ -50,7 +51,37 @@
 }
 
 @include sm {
+  .product-details {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
 
+  .product-details__title {
+    position: relative;
+    padding-right: 20px + 80px;
+  }
+
+  .product-details__title span {
+    position: absolute;
+    width: 80px;
+    right: 20px;
+    top: 0;
+    text-align: center;
+  }
+
+  .product-details__content {
+    position: relative;
+    width: 50%;
+  }
+
+  .product-details__img-container {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
 }
 
 
