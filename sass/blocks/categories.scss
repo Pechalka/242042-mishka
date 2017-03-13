@@ -1,6 +1,7 @@
+@import "../mixins";
 
 .categories {
-  background-color: #63d1bb;
+  background-color: #f9f9f9;
 }
 
 .categories__list {
@@ -10,7 +11,8 @@
 }
 
 .categories__item {
-  padding: 25px 20px;
+  background-color: #63d1bb;
+  padding: 25px 30px;
   display: block;
   position: relative;
 }
@@ -46,4 +48,17 @@
   background: url(../img/icon-toy.svg) no-repeat center center;
   right: 25px;
   top: 20px;
+}
+
+@include sm {
+  .categories__list {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .categories__item {
+    width: 50%;
+    padding: 30px 40px;
+  }
 }
