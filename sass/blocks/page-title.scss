@@ -1,3 +1,4 @@
+@import "../mixins";
 
 .page-title {
   background-color: #f1f1f1;
@@ -10,4 +11,28 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+@include sm {
+  .page-title {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+
+  .page-title__legend {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@include md {
+  .page-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .page-title__legend {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
