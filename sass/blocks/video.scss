@@ -1,0 +1,52 @@
+@import "../mixins";
+
+.video {
+  border: 1px solid #ececec;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video__title {
+  margin: 0;
+  padding: 30px;
+}
+
+.video__description {
+  padding: 30px;
+}
+
+.video__img-container {
+  background-color: #ececec;
+  text-align: center;
+}
+
+.video__btn {
+  width: 100%;
+}
+
+
+@include sm {
+  .video__img-container {
+    min-height: 455px;
+  }
+
+  .video__title {
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  .video__description {
+    order: 2;
+  }
+
+  .video__btn {
+    width: auto;
+  }
+}
+
+@include md {
+  .video {
+    margin-bottom: 105px;
+  }
+}
