@@ -1,0 +1,55 @@
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-group__label {
+  width: 100%;
+  margin-bottom: 25px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.form-group__content {
+  width: 100%;
+}
+
+@include mediaTablet {
+  .form-group {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form-group__label {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .form-group__content {
+    width: 75%;
+  }
+}
+
+@include mediaDesktop {
+  .form-group {
+    max-width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+
+  .form-group__label {
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  .form-group__content {
+    width: 60%;
+  }
+}

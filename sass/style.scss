@@ -1,6 +1,6 @@
 
 @import "normalize";
-
+@import "mixins";
 @import "blocks/menu";
 @import "blocks/footer";
 @import "blocks/social-list";
@@ -17,5 +17,11 @@
 @import "blocks/modal";
 @import "blocks/products";
 @import "blocks/product";
-@import "blocks/order";
 @import "blocks/video";
+@import "blocks/section";
+@import "blocks/form-group";
+@import "blocks/control";
+@import "blocks/checkbox-list";
+@import "blocks/radio-list";
+@import "blocks/order-description";
+@import "blocks/order";

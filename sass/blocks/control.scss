@@ -1,0 +1,49 @@
+
+.control {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.control__label {
+  font-size: 17px;
+  line-height: 18px;
+  padding-right: 25px;
+}
+
+.control__input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+  flex-grow: 1;
+  background: none;
+}
+
+textarea.control__input {
+  border: 2px solid #000000;
+  padding: 15px 20px;
+}
+
+.control__input--phone {
+
+}
+
+.control__input--email {
+
+}
+
+@include mediaTablet {
+  .control {
+    flex-direction: row;
+  }
+
+  .control__input {
+    width: auto;
+    padding: 15px 20px;
+  }
+}
