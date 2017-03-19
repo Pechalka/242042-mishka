@@ -54,3 +54,10 @@
     padding-top: 0;
   }
 }
+
+@include mediaDesktop {
+  .footer {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}

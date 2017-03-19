@@ -7,26 +7,27 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header class="menu">
-      <a class="menu__logo">
-        <img src="img/logo-mobile.svg" />
-      </a>
-      <button class="menu__toggle">открыть меню</button>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link  menu__link--search" href="#">Поиск по сайту</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link  menu__link--cart" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </header>
+    <div class="menu__wrapper">
+      <header class="menu">
+        <a class="menu__logo">
+          <img src="img/logo-mobile.svg" />
+        </a>
+        <button class="menu__toggle">открыть меню</button>
+        <a class="menu__catalog" href="catalog.html">Каталог товаров</a>
+        <a class="menu__order" href="form.html">Вязание на заказ</a>
+        <a class="menu__search" href="#">Поиск по сайту</a>
+        <a class="menu__cart" href="#">Корзина: пока пуста</a>
+        <ul class="menu__adition-menu">
+          <li>
+            <a href="#">Новые поступления</a>
+          </li>
+          <li>
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="menu__delivery">Бесплатная доставка по России</span>
+      </header>
+    </div>
     <div class="promo">
       <h1 class="promo__text">Милые штуки ручной<br/> работы для дома</h1>
     </div>
