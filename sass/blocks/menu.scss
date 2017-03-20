@@ -157,6 +157,12 @@
   }
 }
 
+.menu__second-bg {
+  margin-top: -85px;
+  border-top: 1px solid #e7e7e7;
+  display: none;
+}
+
 @include mediaTablet {
   .menu {
     padding-left: 50px;
@@ -168,11 +174,12 @@
     height: auto;
   }
 
+  .menu__second-bg {
+    display: block;
+  }
+
   .menu__wrapper {
     min-height: auto;
-    background: #fff;
-    height: 84px;
-    border-bottom: 1px solid #e7e7e7;
   }
 
   .menu__toggle {
