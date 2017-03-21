@@ -206,6 +206,8 @@
 
   .menu__delivery {
     display: block;
+    height: 84px;
+    box-sizing: border-box;
   }
 
   .menu__catalog {
@@ -232,6 +234,8 @@
 @include mediaDesktop {
   .menu__adition-menu {
     display: flex;
+    height: 84px;
+    box-sizing: border-box;
   }
 
   .menu__adition-menu a {
