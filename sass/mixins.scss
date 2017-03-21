@@ -12,6 +12,20 @@ $screen-md-min:                          1024px;
 $screen-lg-min:                          1224px;
 $screen-xs-max:                           320px;
 
+@mixin container() {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include mediaTablet {
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
 @mixin from($device-width) {
   @media screen and (min-width: $device-width) {
     @content;

@@ -1,11 +1,19 @@
 @import "../mixins";
 
 .promo {
-  min-height: 280px;
+  @include container;
+  min-height: 490px;
   background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat center bottom;
-  padding-left: 25px;
-  padding-right: 25px;
+  background-size: cover;
   background-size:contain;
+  position: relative;
+}
+
+.promo__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .promo__text {
@@ -16,13 +24,13 @@
   margin: 0;
 }
 
-@include sm {
+@include mediaTablet {
   .promo {
-    min-height: 580px;
+    min-height: 745px;
   }
 
   .promo__text {
     padding-top: 110px;
   }
-
 }
+
