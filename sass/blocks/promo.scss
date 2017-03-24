@@ -1,5 +1,3 @@
-@import "../mixins";
-
 .promo {
   @include container;
   min-height: 490px;
@@ -22,6 +20,7 @@
   text-align: center;
   padding-top: 70px;
   margin: 0;
+  @include opensansbold;
 }
 
 @include mediaTablet {
@@ -32,5 +31,16 @@
   .promo__text {
     padding-top: 110px;
   }
+
+  .promo__text {
+    font-size: 43px;
+    line-height: 53px;
+  }
 }
 
+@include mediaDesktop {
+  .promo__text {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

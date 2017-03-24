@@ -14,6 +14,7 @@
   left: 0;
   right: 0;
   text-align: center;
+  @include opensansbold;
 }
 
 .menu__wrapper {
@@ -31,7 +32,7 @@
   color: #000;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   order: 2;
   border-bottom: 1px solid #e7e7e7;
@@ -39,7 +40,7 @@
 
 .menu__order {
   width: 100%;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   padding-left: 30px;
   padding-top: 30px;
@@ -58,19 +59,29 @@
   border-bottom: 1px solid #e7e7e7;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   text-decoration: none;
   color: #000;
   order: 4;
   flex-grow: 0;
+  position: relative;
+}
+
+.menu__search::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: calc(50% - 10px);
+  background: url(../img/icon-search.svg) no-repeat;
+  height: 20px;
+  width: 20px;
 }
 
 .menu__cart {
   width: 100%;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
-  padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #fff;
@@ -79,6 +90,17 @@
   color: #000;
   order: 5;
   text-align: center;
+  position: relative;
+}
+
+.menu__cart::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: calc(50% - 10px);
+  background: url(../img/icon-cart.svg) no-repeat;
+  height: 20px;
+  width: 20px;
 }
 
 .menu__adition-menu {
@@ -95,6 +117,7 @@
   color: #000;
   display: block;
   margin-right: 30px;
+  font-size: 15px;
 }
 
 
@@ -198,27 +221,28 @@
   .menu__order {
     order: 7;
     border-bottom: none;
-  }
-
-  .menu__catalog {
-    order: 6;
+    width: 260px;
+    font-size: 15px;
   }
 
   .menu__delivery {
     display: block;
     height: 84px;
     box-sizing: border-box;
+    @include opensans;
   }
 
   .menu__catalog {
     width: auto;
     border-bottom: none;
+    order: 6;
+    font-size: 15px;
   }
 
   .menu__cart {
-    width: 37%;
-    flex-grow: 1;
+    width: 34%;
     text-align: right;
+    padding-left: 30px;
   }
 
   .menu__search {
@@ -226,9 +250,6 @@
     @include textHidden;
   }
 
-  .menu__order {
-    width: 260px;
-  }
 }
 
 @include mediaDesktop {
@@ -253,6 +274,7 @@
     order: 2;
     background-color: #fff;
     border-bottom: 1px solid #e7e7e7;
+    font-size: 17px;
   }
 
   .menu__catalog {
@@ -260,13 +282,12 @@
     background-color: #fff;
     border-right: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-  }
-
-  .menu__catalog {
-    width: 16%;
+    font-size: 17px;
+    width: 17%;
   }
 
   .menu__cart {
     width: 25%;
+    font-size: 17px;
   }
 }

@@ -4,6 +4,7 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 25px;
+  @include opensansbold;
 }
 
 .title span {
